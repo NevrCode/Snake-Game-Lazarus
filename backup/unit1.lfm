@@ -1,0 +1,78 @@
+object Form1: TForm1
+  Left = 608
+  Height = 642
+  Top = 387
+  Width = 682
+  Caption = 'Form1'
+  ClientHeight = 642
+  ClientWidth = 682
+  Color = clCream
+  DesignTimePPI = 192
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  Position = poScreenCenter
+  LCLVersion = '3.0.0.3'
+  object img: TImage
+    Left = 96
+    Height = 90
+    Top = 160
+    Width = 90
+    AutoSize = True
+    Center = True
+    Proportional = True
+    Stretch = True
+  end
+  object Label1: TLabel
+    Left = 16
+    Height = 54
+    Top = 0
+    Width = 239
+    Caption = 'Snake game'
+    Color = clCream
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -43
+    Font.Name = 'Trebuchet MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object score: TLabel
+    Left = 504
+    Height = 40
+    Top = 8
+    Width = 114
+    Caption = 'Score : '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -32
+    Font.Name = 'Trebuchet MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    OnClick = scoreClick
+  end
+  object Label2: TLabel
+    Left = 312
+    Height = 40
+    Top = 585
+    Width = 73
+    Caption = 'Start'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -32
+    Font.Name = 'Trebuchet MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    OnClick = Label2Click
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 100
+    OnTimer = Timer1Timer
+    Left = 32
+    Top = 72
+  end
+end
